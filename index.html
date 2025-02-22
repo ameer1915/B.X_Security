@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>امتحان أوامر الكالي لينكس </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+        body {
+            font-family: 'VT323', monospace;
+            background-color: #000;
+            color: #33ff33;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #111;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #0f0;
+        }
+        h1, h2 {
+            color: #0f0;
+        }
+        .command {
+            background: black;
+            color: #0f0;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 20px;
+            overflow: auto;
+            white-space: nowrap;
+            border-left: 3px solid #0f0;
+            text-align: left;
+			text-align:center;
+        }
+        code {
+            background: #222;
+            padding: 5px;
+            border-radius: 5px;
+            color: #0f0;
+        }
+        .typing {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid #0f0;
+            animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink-caret {
+            50% { border-color: transparent; }
+        }
+        img {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0 0 10px #0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="typing">تسجيل الدخول باستخدام <br>SSH Server Conect</h1>
+        <p>للدخول إلى الخادم عبر SSH، قم بتنفيذ الأمر التالي:</p>
+        <div class="command">ssh username@server_ip</div>
+        <p>استبدل <code>username</code> باسم المستخدم و <code>server_ip</code> بعنوان الخادم.</p>
+        
+        <h2>تسجيل الدخول باستخدام مفتاح خاص:</h2>
+        <div class="command">ssh -i /path/to/private_key username@server_ip</div>
+        
+        <h2>تفاصيل الاتصال:</h2>
+<center>
+        <div class="command">
+            ssh - Server <br>
+            username: bandit0 <br>
+            server: 16.16.163.126 <br>
+            password: bandit0 <br>
+            port: 2220
+        </div>
+
+</center>        
+        <h2>مهمتك:</h2>
+        <p>عند دخولك إلى الخادم، هناك ملف يحتوي على كلمة مرور عليك العثور عليه.</p>
+        <img src="https://imgur.com/CXeok3D.png" alt="Server login">
+        
+        <h2>اتصالك بالسيرفر سوف يكون على الشكل التالي:</h2>
+        <img src="https://imgur.com/bTN753Y.png" alt="Server login">
+        
+        <h2>كلمة المرور المطلوبة:</h2>
+        <p>ابحث عن كلمة مرور تبدأ وتنتهي بالشكل التالي:</p>
+        <div class="command">ZjLj............................p5If</div>
+		<img src="https://imgur.com/cP8CPL9.png" />
+        
+        <h2>الانتقال إلى الخادم التالي:</h2>
+        <p>بعد العثور على كلمة المرور، استخدمها للدخول إلى الخادم التالي باستخدام المستخدم <b>bandit1</b>.</p>
+        <img src="https://imgur.com/K9RPXaQ.png" alt="Server login">
+        
+        <h2>مفهوم التدرج في الخوادم:</h2>
+        <p>في كل مرحلة، ستجد مفتاحاً يتيح لك الوصول إلى الخادم التالي.</p>
+        <img src="2_content.png" alt="Server login">
+        
+        <h2>تكرار العملية مع الخوادم اللاحقة:</h2>
+        <p>بعد تسجيل الدخول إلى الخادم الثاني، ابحث عن كلمة المرور الخاصة بالخادم الثالث (bandit2)، وهكذا.</p>
+        <img src="https://imgur.com/xN7F55O.png" alt="Server login">
+        
+        <h2>متابعة البحث عن كلمات المرور:</h2>
+        <p>كرر نفس الخطوات للوصول إلى الخادم الرابع.</p>
+        <img src="https://imgur.com/loInGJS.png" alt="Server login">
+        
+        <h2>الوصول إلى المرحلة النهائية:</h2>
+        <p>في الخادم الرابع، ابحث عن كلمة المرور النهائية التي تبدأ وتنتهي بالشكل التالي:</p>
+        <div class="command">4oQY................................XGUQw</div>
+        
+        <h2>إدخال كلمة المرور النهائية:</h2>
+        <p>بعد حصولك على كلمة المرور الصحيحة، أدخلها في البرنامج المطلوب لاستكمال العملية بنجاح.</p>
+        <img src="https://imgur.com/T9CrSny.png" alt="Final Step">
+    </div>
+</body>
+</html>
